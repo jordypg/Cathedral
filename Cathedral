@@ -1,0 +1,41 @@
+def __main__():
+    print('penis')
+
+class Board:
+    def __init__(self):
+        #size = [x, y]
+        self.size = [10, 10]
+        #self.whitePieces = {}
+        #self.blackPieces
+
+class Piece:
+    #takes the name of the piece, and its layout
+    #layout is a 5x5 grid, with "false" where the piece isn't,
+    #and "true" where it is. Rotates around the center.
+    def __init__(self, name, layout):
+        self.name = name
+        self.layout = layout
+
+        #calculate the size of the piece
+        self.size = 0
+        for x in layout:
+            for y in layout[x]:
+                if layout[x][y]:
+                    self.size += 1
+    
+    def getName(self):
+        return self.name
+    
+    def getLayout(self, rotation):
+        '''takes a rotation from 0-3, 0 is "face up", 1 is 90 degrees, etc.'''
+        layoutCopy = self.layout.copy()
+        for i in range(rotation):
+            print('penis2')
+        return self.layout
+
+    def getSize(self):
+        return self.size
+    
+    
+    
+    
