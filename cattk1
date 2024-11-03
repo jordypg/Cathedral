@@ -1,8 +1,0 @@
-import tkinter as tk
-from tkinter import messagebox
-
-def CathedralGUI():
-    global wdow
-    wdow = tk.Tk()
-    wdow.title("Cathedral")
-    wdow.mainloop()
